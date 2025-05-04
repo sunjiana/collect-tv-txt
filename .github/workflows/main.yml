@@ -41,8 +41,8 @@ jobs:
           
     - name: Commit changes
       run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add merged_output.txt merged_output.m3u merged_output_simple.txt merged_output_simple.m3u others_output.txt
           git add live.txt live.m3u live_lite.txt live_lite.m3u
           git commit -m ":tada:  AutoUpdate $(date +'%Y%m%d')"
